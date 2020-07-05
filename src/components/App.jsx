@@ -6,7 +6,12 @@ var userIsRegistered = false;
 function App() {
   return (
     <div className="container">
-      <Form />
+      {userIsRegistered ? <Form 
+      
+     value="Login" 
+      />:<Form 
+      value="Register" 
+       /> }
     </div>
   );
 }
