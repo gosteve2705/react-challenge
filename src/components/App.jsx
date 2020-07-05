@@ -7,10 +7,11 @@ function App() {
   return (
     <div className="container">
       {userIsRegistered ? <Form 
-      
+      userIsRegistered={userIsRegistered}
      value="Login" 
       />:<Form 
       value="Register" 
+      userIsRegistered={userIsRegistered}
        /> }
     </div>
   );
